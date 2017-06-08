@@ -1,11 +1,14 @@
 package com.unnatisoft.oops;
 
 public class Person {
+	
+	//Member Data
 	private String firstName;
 	private String lastName;
 	private String age;
 	private String gender;
 
+	//Methods
 	public String getFirstName() {
 		return firstName;
 	}

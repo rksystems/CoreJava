@@ -20,14 +20,11 @@ public class SuperClass {
 	}
 
 	public void method1() {
-		System.out.println(aPrivate);
-		System.out.println(aPublic);
-		System.out.println(aProtected);
-		System.out.println(aDefault);
-		
+		System.out.println("method 1");
+		method2();
 	}
 
 	public void method2() {
-		System.out.println("Method 2");
+		
 	}
 }

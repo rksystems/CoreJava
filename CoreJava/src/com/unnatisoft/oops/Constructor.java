@@ -1,6 +1,6 @@
 package com.unnatisoft.oops;
 
-public class Constructor {
+public class Constructor extends Object{
 
 	// Default Constructor
 	public Constructor() {
@@ -12,5 +12,12 @@ public class Constructor {
 		public Constructor(int i) {
 			System.out.println("Object created");
 		}
+		
+		@Override
+		protected void finalize(){
+			System.out.println("Object is being destroyed");
+		}
+		
+		
 
 }

@@ -17,7 +17,7 @@ public class Vegetable {
 		Object obj = cls.newInstance();*/
 		
 		//Vegetable v = null;
-		Vegetable v = FactoryDP.giveMeObject(ars[0]);
+		Vegetable v = FactoryDP.giveMeObject(ars[1]);
 		/*if (obj instanceof Tamato) {
 			v = (Tamato) obj;
 		}

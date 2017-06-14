@@ -17,7 +17,10 @@ public class Producer implements Runnable {
 		}
 		synchronized (mb) {
 			this.mb.setBox("Hello");
+			//Wakes up a single thread that is waiting on this object's monitor
 			mb.notify();
+			//Wakes up all threads that are waiting on this object's monitor.
+			//mb.notifyAll();
 		}
 
 	}

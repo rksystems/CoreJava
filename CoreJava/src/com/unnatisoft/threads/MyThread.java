@@ -6,13 +6,13 @@ public class MyThread extends Thread {
 	public void run() {
 		System.out.print("[A");
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(1);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("]");
 	}
+	
 	public static void main(String[] args) {
 		new MyThread().start();
 		new MyThread().start();

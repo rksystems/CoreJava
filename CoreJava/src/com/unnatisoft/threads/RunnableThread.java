@@ -1,6 +1,6 @@
 package com.unnatisoft.threads;
 
-public class RunnableThread implements Runnable {
+public class RunnableThread implements Runnable{
 
 	Student st = null;
 
@@ -18,7 +18,7 @@ public class RunnableThread implements Runnable {
 			int i = 0;
 			for (; i < actual.length; i++)
 				temp[i] = actual[i];
-			temp[i] = "Second Course set by " + tName;
+			temp[i] = "Course set by " + tName;
 			this.st.setCourses(temp);
 			for (String s : this.st.getCourses())
 				System.out.println(s);

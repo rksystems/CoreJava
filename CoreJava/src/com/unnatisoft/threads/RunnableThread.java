@@ -30,6 +30,8 @@ public class RunnableThread implements Runnable{
 	}
 
 	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getName());
+		System.out.println(Thread.currentThread().getPriority());
 		Student std = new Student();
 		std.setId(1);
 		std.setName("Rama");
@@ -42,6 +44,11 @@ public class RunnableThread implements Runnable{
 		new Thread(r1).start();
 		new Thread(r2).start();
 
+		//
+		//
+		
+		//
+		
 	}
 
 }

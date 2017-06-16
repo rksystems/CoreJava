@@ -8,11 +8,14 @@ import java.io.IOException;
 public class ReadAFile {
 
 	public static void main(String[] args) {
+		readFile("src/com/unnatisoft/gc/GCDemo.java");
+	}
+
+	public static void readFile(String filePath) {
 		FileInputStream fis = null;
 		FileOutputStream fos = null;
 		try {
-			fis = new FileInputStream(
-					"src/com/unnatisoft/gc/GCDemo.java");
+			fis = new FileInputStream(filePath);
 			fos = new FileOutputStream("sdafsdafsad.txt");
 			int i;
 			while ((i = fis.read()) != -1) {
@@ -29,7 +32,6 @@ public class ReadAFile {
 				e.printStackTrace();
 			}
 		}
-
 	}
 
 }

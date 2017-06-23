@@ -23,6 +23,9 @@ public class LinkedListDemo {
 		lList.add("6");
 		
 		lList.add(3, "100");
+		
+		lList.remove("100");
+		lList.remove(3);
 
 		// System.out.println(lList);
 

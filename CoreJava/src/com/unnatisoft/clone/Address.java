@@ -3,10 +3,10 @@ package com.unnatisoft.clone;
 import java.io.Serializable;
 
 public class Address implements Serializable {
-	String street;
-	String pin;
+	public String street;
+	public String pin;
 
-	Address() {
+	public Address() {
 		super();
 		this.street = "SSS";
 		this.pin = "PPP";

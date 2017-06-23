@@ -3,11 +3,11 @@ package com.unnatisoft.clone;
 import java.io.Serializable;
 
 public class Person implements Cloneable, Serializable {
-	int id;
-	int age;
-	Address address;
+	public int id;
+	public int age;
+	public Address address;
 
-	Person() {
+	public Person() {
 		super();
 		this.id = 12;
 		this.age = 21;

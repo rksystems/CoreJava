@@ -16,10 +16,11 @@ public class ClassNotFoundDemo {
 
 		try {
 			// Lock Resources
-			Class.forName("com.unnatisoft.exceptionhandling.ExceptionDemo");
+			Class.forName("com.unnatisoft.exceptionhandling.ExceptionDemo1");
 			System.exit(0);
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(e);
+			//e.printStackTrace();
 			System.out.println("Catch Block");
 		}finally {
 			// Unlock resource

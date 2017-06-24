@@ -1,6 +1,6 @@
 package com.unnatisoft.threads;
 
-public class Student extends Object{
+public class Student extends Object implements Comparable<Student>{
 	private int id;
 	private String name;
 	private String[] courses;
@@ -62,6 +62,17 @@ public class Student extends Object{
 		if (id != other.id)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "[id=" + id + "]";
+	}
+
+	@Override
+	public int compareTo(Student st) {
+		System.out.println(this.id+" compareTo "+st.id);
+		return this.id - st.id;
 	}
 
 }

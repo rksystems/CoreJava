@@ -1,6 +1,8 @@
 package com.unnatisoft.Serialization;
 
-public class ClassOne {
+import java.io.Serializable;
+
+public class ClassOne implements Serializable{
 
 	public ClassOne() {
 		super();

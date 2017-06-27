@@ -10,7 +10,7 @@ import java.io.Serializable;
 import com.unnatisoft.clone.Address;
 import com.unnatisoft.clone.Person;
 
-public class SerializationDemo implements Serializable {
+public class SerializationDemo {
 
 	public static void main(String[] args) {
 		Person p1 = new Person();
@@ -20,9 +20,10 @@ public class SerializationDemo implements Serializable {
 		p1.id = 1;
 		p1.age = 21;
 		p1.address = a1;
-		ClassThree clazz3 = new ClassThree();
+		ClassTwo clazz3 = new ClassTwo(1);
 		try {
-			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File("MyObjectData.abc")));
+			ObjectOutputStream oos = new ObjectOutputStream(
+					new FileOutputStream(new File("MyObjectData.abc")));
 			oos.writeObject(clazz3);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

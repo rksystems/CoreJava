@@ -14,7 +14,8 @@ public class DeSerializationDemo implements Serializable {
 		ClassThree clazz3 = new ClassThree();
 		ObjectInputStream ois;
 		try {
-			ois = new ObjectInputStream(new FileInputStream(new File("MyObjectData.abc")));
+			ois = new ObjectInputStream(new FileInputStream(
+					new File("MyObjectData.abc")));
 			try {
 				ClassThree p1 = (ClassThree)ois.readObject();
 				System.out.println(p1);

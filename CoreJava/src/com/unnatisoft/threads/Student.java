@@ -1,11 +1,10 @@
 package com.unnatisoft.threads;
 
-public class Student extends Object implements Comparable<Student>{
+public class Student extends Object implements Comparable<Student> {
 	private int id;
 	private String name;
 	private String[] courses;
 
-	
 	public Student() {
 		super();
 	}
@@ -42,7 +41,7 @@ public class Student extends Object implements Comparable<Student>{
 
 	@Override
 	public int hashCode() {
-		System.out.println("hashCode"+this.id);
+		System.out.println("hashCode" + this.id);
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
@@ -51,7 +50,7 @@ public class Student extends Object implements Comparable<Student>{
 
 	@Override
 	public boolean equals(Object obj) {
-		System.out.println("equals"+this.id);
+		System.out.println("equals" + this.id);
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -71,7 +70,7 @@ public class Student extends Object implements Comparable<Student>{
 
 	@Override
 	public int compareTo(Student st) {
-		System.out.println(this.id+" compareTo "+st.id);
+		System.out.println(this.id + " compareTo " + st.id);
 		return this.id - st.id;
 	}
 

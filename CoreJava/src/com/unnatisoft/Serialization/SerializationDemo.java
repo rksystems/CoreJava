@@ -1,4 +1,4 @@
-package com.unnatisoft.clone;
+package com.unnatisoft.Serialization;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,6 +6,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+
+import com.unnatisoft.clone.Address;
+import com.unnatisoft.clone.Person;
 
 public class SerializationDemo implements Serializable {
 
@@ -17,10 +20,10 @@ public class SerializationDemo implements Serializable {
 		p1.id = 1;
 		p1.age = 21;
 		p1.address = a1;
-
+		ClassThree clazz3 = new ClassThree();
 		try {
 			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File("MyObjectData.abc")));
-			oos.writeObject(p1);
+			oos.writeObject(clazz3);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

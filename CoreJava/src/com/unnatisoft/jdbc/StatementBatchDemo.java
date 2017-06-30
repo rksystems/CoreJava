@@ -20,10 +20,16 @@ public class StatementBatchDemo {
 
 			int[] updateCounts = stmt.executeBatch();
 			for(int i=0; i<updateCounts.length; i++)
-			System.out.println(updateCounts[i]+" rows updated");
+			System.out.println(updateCounts[i]+" row(s) updated");
 			con.commit();
 
 		} catch (BatchUpdateException b) {
+			try {
+				con.rollback();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			b.printStackTrace();
 		} catch (SQLException ex) {
 			ex.printStackTrace();

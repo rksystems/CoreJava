@@ -12,7 +12,7 @@ public class ResultSetTypes2 {
 		Connection con = JDBCConnectionUtil.getConnection();
 		Statement stmt = null;
 		try {
-			stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+			stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 
 			ResultSet uprs = stmt.executeQuery("SELECT * FROM Student");
 			try {
